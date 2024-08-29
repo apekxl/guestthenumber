@@ -1,6 +1,4 @@
 <html>
-    
-
     <head>
     </head>
 <body>
@@ -16,14 +14,12 @@
         let guess = document.getElementById("guess").value;
         let resultElement = document.getElementById("result");
         if(guess == secretNumber){
-            resultElement.textContent = "betul";  
+            resultElement.textContent = "salah";  
         } else if (guess > secretNumber){
             resultElement.textContent = "Nombor Besar, nombor lebih kecil daripada tekaan anda";
         }else{
             resultElement.textContent = "Nombor Kecil, nombor lebih beasr daripada tekaan anda";
         }
-        
-        
     }
 </script>
-    </html>
+</html>
