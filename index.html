@@ -13,7 +13,7 @@
 <script>
     let secretNumber =Math.floor(Math.random() * 100) + 1;
     function checkGuess(){
-        let guess = document.getelementById("guess").value;
+        let guess = document.getElemenById("guess").value;
         let resultElement = document.getElemenById("result");
         if(guess == secretNumber){
             resultElement.textContent = "betul";  
