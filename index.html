@@ -13,8 +13,8 @@
 <script>
     let secretNumber =Math.floor(Math.random() * 100) + 1;
     function checkGuess(){
-        let guess = document.getElemenById("guess").value;
-        let resultElement = document.getElemenById("result");
+        let guess = document.getElementById("guess").value;
+        let resultElement = document.getElementById("result");
         if(guess == secretNumber){
             resultElement.textContent = "betul";  
         } else if (guess > secretNumber){
