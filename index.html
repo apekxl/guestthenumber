@@ -5,9 +5,25 @@
     </head>
 <body>
   <h1>Guess The Number</h1>
-<p>1m thingking of a number between 1 to 100.
-can you guess it?</p>
- <input type ="number" placeholder ="insert Number" id="guess"></input><button>Guess</button>
-  <p>Result</p>
+     <p>1m thingking of a number between 1 to 100. can you guess it?</p>
+     <input type ="number" placeholder ="insert Number" id="guess"></input>
+     <button onclick="checkGuess()">Guess</button>
+     <p> id="result"</p>
 </body>
+<script>
+    let secretNumber =Math.floor(Math.random() * 100) + 1;
+    function checkGuess(){
+        let guess = document.getelementById("guess").value;
+        let resultElement = document.getElemenById("result");
+        if(guess == secretNumber){
+            resultElement.textContent = "betul";  
+        } else if (guess > secretNumber){
+            resultelement.textcontent = "Nombor Besar, nombor lebih kecil daripada tekaan anda"
+        }else{
+            resultelement.textcontent = "Nombor Kecil, nombor lebih beasr daripada tekaan anda"
+        }
+        
+        
+    }
+</script>
     </html>
